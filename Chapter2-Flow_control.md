@@ -219,7 +219,7 @@ print('access granted')
 # access granted
 ```
 
-Remember: "truthy" and "falsey" values:
+Remember: "truthy" and "falsey" values:  
 when used in condition: 0, 0.0 and '' are considered ```False```, other values are considered ```True```.
 
 ```python
