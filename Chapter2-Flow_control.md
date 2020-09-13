@@ -1,6 +1,6 @@
 ## 2 Flow Control
 
-### boolean values 
+### Boolean values 
 
 #### boolean operators
 ```python
@@ -28,7 +28,6 @@ False
 >>> 33 != 44
 True
 ```
-
 
 #### Boolean Operators: and, or, not
 ```python
@@ -242,8 +241,6 @@ print('done')
 # done
 ```
 
-
-
 ### ```for``` loop and the ```range()``` function 
 
 ```python
@@ -295,9 +292,7 @@ lala five times 1
 lala five times 0
 ```
 
-
 ### Equivalent ```while``` loop
-
 
 ```python
 print('my name is')
@@ -314,9 +309,7 @@ lala five time (3)
 lala five time (4)
 ```
 
-
 ### Importing Modules
-
 
 ```python
 import random
@@ -330,12 +323,12 @@ for i in range(5):
 2
 ```
 
-An alternative method of ```import``` using ```from```
+An alternative method of ```import``` using ```from```:
 
 using ```from``` xxx ```import``` *  
 ex: ```from random import *```
 
-but you can also import selected function:
+But you can also import selected function, which is more controlled:
 
 ```python
 # randrange ([start,] stop [,step])
