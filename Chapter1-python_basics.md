@@ -1,4 +1,4 @@
-## Python Basics
+## 1 Python Basics
 
 ### Expression: values + operator
 
@@ -28,8 +28,7 @@ value = argument
 >>> 'hello'
 'hello'
 ```
-Can't mix the data types!
-
+Cannot mix the data types!
 
 #### Math operators
  (from highest to lowest precedence):
@@ -63,8 +62,6 @@ String Replication:
 
 ### Storing values in Variables
 
-
-
 Assignment statement
 ```python
 >>> var = 33
@@ -81,12 +78,11 @@ Statement
 ```
 
 #### variable names
-Cannot:
+Cannot use the following as variable name:
 * hyphens - 
 * spaces
 * begin with number
 * special characters $ ' 
-
 
 Useful function:
 ```python
