@@ -1,4 +1,4 @@
-## Flow Control
+## 2 Flow Control
 
 ### boolean values 
 
@@ -332,7 +332,7 @@ for i in range(5):
 
 An alternative method of ```import``` using ```from```
 
-using ```from``` xxx ```import``` * 
+using ```from``` xxx ```import``` *  
 ex: ```from random import *```
 
 but you can also import selected function:
