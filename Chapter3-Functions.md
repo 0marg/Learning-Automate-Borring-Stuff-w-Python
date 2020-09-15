@@ -17,9 +17,9 @@ Keyword arguments to functions are usually optional
 10
 ```
 
-We need to type random. in front
+We need to type ```random.``` in front
 
-Alternative form of import :  
+Alternative form of ```import``` :  
 (no need to type random. in front  but not recommended)
 
 ```python
@@ -34,7 +34,6 @@ Alternative form of import :
 >>> 
 ```
 
-
 ```python
 import sys
 print('hello')
@@ -42,9 +41,7 @@ sys.exit()
 print('bye')
 ```
 
-
 To install third party function: https://automatetheboringstuff.com/2e/appendixa/ PyPi
-
 
 ```python
 >>> import pyperclip
@@ -70,7 +67,6 @@ Successfully installed pyperclip-1.8.0
 'hello world'
 ```
 
-
 ### Write your own function
 
 ```python
@@ -90,13 +86,12 @@ hola Bob
 hij Bob
 ```
 
-
 ```python
 >>> 'Hello has ' + str(len('hello')) + ' letters in in.'
 'Hello has 5 letters in in.'
 ```
 
-```return```
+### ```return``` keyword
 
 ```python
 def plusOne(number):
@@ -170,10 +165,9 @@ def telors():
 3. code in one function's local scope cannot use variables in another local scope  
 4. you can use the same name for different variable in different scopes  
 
-### The global statement
+### The ```global``` statement
 
 ```global``` to change the global variable inside of local variable:  
-
 
 ```python
 def nasi():
@@ -186,8 +180,7 @@ print(telor)
 hello
 55
 ```
-
-#### VS
+#### VS  
 
 ```python
 def nasi():
@@ -260,7 +253,7 @@ wee
 you did not enter a number
 ```
 
-### Guess the number
+### Guess the number program
 
 ```python
 #this is guessing the number game
@@ -285,7 +278,7 @@ else:
     print('nope, the number that I was thinking of was ' + str(secretNumber))
 
 
-OUTPUT:
+# OUTPUT:
 hello what is your name?
 john
 well john guess a number between 1 and 20
