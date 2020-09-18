@@ -22,7 +22,6 @@ You can convert a value into a list
 >>> 
 ```
 
-
 List can contain lists:
 ```python
 >>> lolo = [['carrot', 'spinach'],[1,2,3]]
@@ -32,12 +31,14 @@ List can contain lists:
 2
 ```
 
-Negative indexes:
+### Negative indexes:
 ```python
 >>> lili = ['cat', 'dog', 'snake', 'bird', 'mouse']
 >>> lili[-1]
 'mouse'
 ```
+
+## Sublist with Slices
 
 slice  (from x to y , but not include y)
 ```python
@@ -49,8 +50,7 @@ slice  (from x to y , but not include y)
 index: single item
 slice: list of values
 
-
-Changing value:
+### Changing value:
 ```python
 >>> lili = ['cat', 'dog', 'snake', 'bird', 'mouse']
 >>> lili[2:4] = ['TIGER', 'ELEPHANT', 'RHINO']
@@ -58,7 +58,7 @@ Changing value:
 ['cat', 'dog', 'TIGER', 'ELEPHANT', 'RHINO', 'mouse']
 ```
 
-Slice shortcut
+### Slice shortcut
 ```python
 >>> lili = ['cat', 'dog', 'snake', 'bird', 'mouse']
 >>> lili[:2]
@@ -67,7 +67,7 @@ Slice shortcut
 ['snake', 'bird', 'mouse']
 ```
 
-Delete from the list:
+### Delete from the list:
 ```python
 >>> lili = ['cat', 'dog', 'snake', 'bird', 'mouse']
 >>> del lili[2]
@@ -77,7 +77,6 @@ Delete from the list:
 
 del = unassignment statement
 
-
 You can mix:
 ```python
 >>> cooco = ['lala', 1, 3, 'oops']
@@ -85,7 +84,7 @@ You can mix:
 ['lala', 1, 3, 'oops']
 ```
 
-List length:
+### List length:
 ```python
 >>> len('hello')
 5
@@ -93,7 +92,7 @@ List length:
 3
 ```
 
-Concatenation
+### Concatenation
 ```python
 >>> 'hello ' + 'word'
 'hello word'
@@ -132,7 +131,7 @@ False
 False
 ```python
 
-For Loops with List
+### For Loops with List
 
 for loops technically iterates over the values in a list
 ```python
@@ -186,7 +185,7 @@ Index 2 in supplies is: paper
 Index 3 in supplies is: bin
 ```
 
-Multiple Assignment:
+### Multiple Assignment
 ```python
 >>> cat = ['fat', 'orange', 'loud']
 >>> size = cat[0]
@@ -239,7 +238,7 @@ lolo %= 1    | lolo = lolo % 1
 ```
 
 
-### List Methods
+### Methods
 
 Methods are function that are "called on" values
 
@@ -329,7 +328,7 @@ It's ASCII-betical
 ['ant', 'bird', 'Cat', 'Dog', 'mouse']
 ```
 
-### mutable VS immutable data type
+### Mutable VS Immutable data type
 
 String and list are similar, but strings are immutable.
 
