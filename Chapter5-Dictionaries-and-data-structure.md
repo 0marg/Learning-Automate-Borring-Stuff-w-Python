@@ -291,3 +291,30 @@ type()
 >>> type(theBoard['top-R'])
 <class 'str'>
 ```
+
+## ```items()``` 
+
+```items()``` method returns a view object.  
+The view object contains the key-value pairs of the dictionary, as tuples in a list.
+
+```python
+car = {
+  "brand": "Ferrari",
+  "model": "355",
+  "year": 1985
+}
+
+x = car.items()
+
+print(x)
+
+for k, v in car.items():
+        print(k.ljust(10, '.') + str(v).rjust(10))
+
+# OUTPUT
+dict_items([('brand', 'Ferrari'), ('model', '355'), ('year', 1985)])
+brand.....   Ferrari
+model.....       355
+year......      1985
+```
+
