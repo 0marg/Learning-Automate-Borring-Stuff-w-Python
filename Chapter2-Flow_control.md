@@ -1,6 +1,6 @@
-## 2 Flow Control
+# 2 Flow Control
 
-### Boolean values 
+## Boolean values 
 
 #### boolean operators
 ```python
@@ -10,7 +10,7 @@ True
 False
 ```
 
-#### Comparison operators:
+### Comparison operators:
 ```python
 ==
 !=
@@ -29,7 +29,7 @@ False
 True
 ```
 
-#### Boolean Operators: and, or, not
+### Boolean Operators: ```and```, ```or```, ```not```
 ```python
 >>> True and True
 True
@@ -44,9 +44,9 @@ True
 True
 ```
 
-### Elements of Flow Control
+## Elements of Flow Control
 
-#### ```if``` Statement
+### ```if``` Statement
 
 ```python
 name = 'Alice'
@@ -55,7 +55,7 @@ if name == 'Alice':
 print('Done')
 ```
 
-#### ```else``` Statement
+### ```else``` Statement
 
 ```python
 password = 'swordfish'
@@ -66,7 +66,7 @@ else:
 # OUTPUT: access granted
 ```
 
-#### ```elif``` Statement
+### ```elif``` Statement
 
 ```python
 #order of elif MATTERS
@@ -90,7 +90,7 @@ else:
     print('you did not enter name')
 ```
 
-#### ```bool()``` function
+### ```bool()``` function
 The value 0, 0.0 and empty string are considered Falsey values.
 
 ```python
@@ -113,7 +113,7 @@ else:
     print('you did not enter name')
 ```
 
-#### ```while``` Loop Statement
+## ```while``` Loop Statement
 
 ```python
 name = ''
@@ -241,7 +241,7 @@ print('done')
 # done
 ```
 
-### ```for``` loop and the ```range()``` function 
+## ```for``` loop and the ```range()``` function 
 
 ```python
 print('my name is')
@@ -292,7 +292,7 @@ lala five times 1
 lala five times 0
 ```
 
-### Equivalent ```while``` loop
+## Equivalent ```while``` loop
 
 ```python
 print('my name is')
@@ -309,7 +309,7 @@ lala five time (3)
 lala five time (4)
 ```
 
-### Importing Modules
+## Importing Modules
 
 ```python
 import random

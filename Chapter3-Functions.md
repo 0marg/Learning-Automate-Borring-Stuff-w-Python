@@ -1,4 +1,4 @@
-## 3 Functions
+# 3 Functions
 
 ```def``` statement defines a function  
 The input to functions are ***arguments***   
@@ -7,7 +7,7 @@ The parameters are the variables in between the function's parentheses in the de
 The return value is specified using the return statement   
 Keyword arguments to functions are usually optional   
 
-### Python's Built-in Functions
+## Python's Built-in Functions
 
 ```python
 >>> import random
@@ -150,14 +150,13 @@ cat dog mouse
 catXXXdogXXXmouse
 ```
 
-### Global & Local scopes
+## Global & Local scopes
 
 ```python
 var = 22 # global variable
 def telors():
     var = 33 # local variable
 ```
-
 
 4 important rules:  
 1. code in the global scope cannot use any local variables  
@@ -195,7 +194,7 @@ hello
 hello
 ```
 
-### Exception Handling
+## Exception Handling
 
 To skip the program from crashing entirely.
 

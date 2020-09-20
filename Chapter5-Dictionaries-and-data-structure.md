@@ -1,4 +1,4 @@
-## 5 Dictionaries
+# 5 Dictionaries
 
 Dictionary, like a List is a collection of many values
 Unlike List indexes, Dictionary can use many data types, not just integers
@@ -18,7 +18,7 @@ Dictionaries are mutable. Variables hold references to dictionary values, not th
 'My cat has gray fur.'
 ```
 
-### Dictionaries vs List
+## Dictionaries vs List
 
 Unlike List, the items in Dictionary are unordered.
 
@@ -214,7 +214,6 @@ if we want it the output as a string: 
 rjtext = pprint.pformat(count)
 print(rjtext)
 ```
-
 
 ## Data structure
 

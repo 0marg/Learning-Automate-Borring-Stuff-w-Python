@@ -1,6 +1,6 @@
 ## 1 Python Basics
 
-### Expression: values + operator
+## Expression: values + operator
 
 value = argument
 
@@ -9,28 +9,28 @@ value = argument
 4
 ```
 
-### Data Types
+## Data Types
 
-#### ints
+### ints
 ```python
 >>> 4
 4
 ```
 
-#### floats 
+### floats 
 ```python
 >>> 4.5
 4.5
 ```
 
-#### strings
+### strings
 ```python
 >>> 'hello'
 'hello'
 ```
 Cannot mix the data types!
 
-#### Math operators
+### Math operators
  (from highest to lowest precedence):
 
 | Operator    | operation     | example | Evaluate to...|
@@ -60,7 +60,7 @@ String Replication:
 'Hola!!!'
 ```
 
-### Storing values in Variables
+## Storing values in Variables
 
 Assignment statement
 ```python
@@ -77,7 +77,7 @@ Statement
 6
 ```
 
-#### variable names
+### variable names
 Cannot use the following as variable name:
 * hyphens - 
 * spaces
@@ -91,38 +91,4 @@ len()
 str()
 int()
 float()
-```
-
-### boolean values 
-
-#### boolean operators
-```python
->>> True
-True
->>> False
-False
-```
-
-#### Comparison operators:
-```python==
-!=
-<
->
-<=
->=
-```
-
-#### Boolean Operators: and, or, not
-```python
->>> True and True
-True
->>> True or False
-True
->>> not False or False
-True
-
->>> myAge = 26
->>> myPet = 'cat'
->>> myAge > 20 and myPet == 'cat'
-True
 ```

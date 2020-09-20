@@ -35,7 +35,7 @@ bien
 
 ### Raw Stings
 
-*Raw string* completely ingores all escape characters
+*Raw string* completely ingores all escape characters  
 Place ```r``` before quote 
 
 ```python
@@ -79,6 +79,17 @@ You can think ```'hello world``` as list:
 'h'
 >>> lala[3]
 'l'
+>>> lala[-1]
+'!'
+>>> lala[0:5]
+'hello'
+>>> lala[:5]
+'hello'
+>>> lala [6:]
+'world!'
+>>> lili = lala[0:5]
+>>> lili
+'hello'
 ```
 
 ### ```in``` and ```not``` with Strings
@@ -104,6 +115,8 @@ False
 >>> lala
 'HELLO WORLD'
 ```
+
+Useful to make case-insensitive comparision:  
 
 ```python
 >>> answer = input()
@@ -157,11 +170,11 @@ False
 
 ## The isX String Methods
 
-```isalpha()```  
-```isalnum()```  
-```isdecimal()```  
-```isspace()```  
-```istitle()```  
+```isalpha()```   only letters and is not blank  
+```isalnum()```  only letters and/or numbers and it is not blank  
+```isdecimal()```  numeric chars and not blank  
+```isspace()```  spaces, tabs, newlines and not blank  
+```istitle()```  worlds begin wiht upper case
 
 ```python
 >>> 'hello'.isalpha()
@@ -186,8 +199,47 @@ False
 False
 ```
 
-### ```startwith()``` & ```endwith()```
+It's useful when we need to validate user input:
+```python
+while True:
+    print('Enter age:')
+    age = input()
+    if age.isdecimal():
+        break
+    print('please enter age in number')
+    
+while True:
+    print('select password, letters and numbers only:')
+    password = input()
+    if password.isalnum():
+        break
+    print('password can only have letters and numbers')
 
+### OUTPUT:
+Enter age:
+qwerty
+please enter age in number
+Enter age:
+34
+select password, letters and numbers only:
+*
+password can only have letters and numbers
+select password, letters and numbers only:
+122
+```
+
+
+### ```startwith()``` & ```endwith()``` String Method
+
+
+```python
+>>> "Hello world!".startswith('Hello')
+True
+>>> "Hello world!".endswith('world!')
+True
+```
+
+### ```join()``` & ```split()``` String Method
 
 
 
