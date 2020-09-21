@@ -408,7 +408,7 @@ text = pyperclip.paste()
 
 # TODO: separate lines and add stars
 
-pyperclip.copy()
+pyperclip.copy(text)
 ```
 ### 2nd step: Separate the lines of the text and add the stars
 
@@ -424,10 +424,11 @@ text = pyperclip.paste()
 # Separate the lines and the star 
 lines = text.split('\n')
 for i in range(len(lines)):     # loop through all indexes in the "lines" list
-        lines[] = "* " + line[i]    # add start to each sting in "lines" list
+        lines[] = '* ' + lines[i]    # add start to each sting in "lines" list
 
 
-pyperclip.copy()
+pyperclip.copy(text)
+
 ```
 ### 3rd step: Join the modifier lines
 
@@ -445,5 +446,5 @@ for i in range(len(lines)):     # loop through all indexes in the "lines" list
     lines[] = "* " + line[i]    # add start to each sting in "lines" list
 text = '\n'.join(lines)
 
-pyperclip.copy()
+pyperclip.copy(text)
 ````
