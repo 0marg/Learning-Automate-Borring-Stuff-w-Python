@@ -55,18 +55,63 @@ Phone number found: 777-777-7777
 
 ### Creating Regex Objects
 
-```python
-import re
-re.compile()
-  .search()
-  .group()
+4 easy steps:  
+
+1. import the regex module: ```1. import re```
+2. create teh Regex object: ```re.compile()```
+3. pass the string you want to search: ```XXXX.search()```
+4. call the match object: ```mo.group()```
 ```
 
 ```python
 >>> import re
 >>> phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
->>> mo = phoneNumRegex.search('call me at 666-666-6666 tomorror')
+>>> mo = phoneNumRegex.search('call me at 666-666-6666 tomorrow or my office at 777-777-7777')
 >>> print ('Phone number found: ' + mo.group())
 Phone number found: 666-666-6666
+```
+Note: Search only display the first found phone number, not the second number!
+
+## More Pattern Matching with Regex
+
+### Grouping with Parentheses
+
+Adding parentheses will create *group* in the regex: (\d\d\d)-(\d\d\d-\d\d\d\d)
+
+```python
+>>> import re
+>>> phoneNumRegex = re.compile(r'(\d\d\d)-(\d\d\d-\d\d\d\d)')
+>>> mo = phoneNumRegex.search('call me at 666-666-6666 tomorrow')
+>>> mo.group(1)
+'666'
+>>> mo.group(2)
+'666-6666'
+>>> mo.group(0)
+'666-666-6666'
+>>> mo.group()
+'666-666-6666'
+```
+
+if you want to retrieve all the groups at once, use ```groups()```:  
+```python
+>>> mo.groups()
+('666', '666-6666')
+>>> areaCode, mainNumber = mo.groups()
+>>> print(areaCode)
+666
+>>> print(mainNumber)
+666-6666
+```
+
+```mo.groups()``` returns tuple of multiple values
+
+
+parentheses has special meeting in regex: use ```\(``` :  
+```python
+>>> import re
+>>> phoneNumRegex = re.compile(r'(\(\d\d\d\))-(\d\d\d-\d\d\d\d)')
+ mo = phoneNumRegex.search('call me at (555) 666-6666 tomorrow')
+
+
 
 
