@@ -105,12 +105,42 @@ if you want to retrieve all the groups at once, use ```groups()```:
 
 ```mo.groups()``` returns tuple of multiple values
 
-
 parentheses has special meeting in regex: use ```\(``` :  
 ```python
 >>> import re
->>> phoneNumRegex = re.compile(r'(\(\d\d\d\))-(\d\d\d-\d\d\d\d)')
- mo = phoneNumRegex.search('call me at (555) 666-6666 tomorrow')
+>>> phoneNumRegex = re.compile(r'(\d\d\d)-(\d\d\d-\d\d\d\d)')
+>>> mo = phoneNumRegex.search('call me at 666-666-6666 tomorrow')
+>>> mo.groups()
+('666', '666-6666')
+>>> areaCode,mainNumber = mo.groups()
+>>> print(areaCode)
+666
+>>> print(mainNumber)
+666-6666
+>>> 
+```
+
+## Matching Multiple Groups with the pipe |
+The first occurrence of matching text will be returned as the Match object.
+```python
+>>> animalRegex = re.compile(r'Dog|Cat')
+>>> mo1 = animalRegex.search('we are living with Cat and Dog.')
+>>> mo1.group()
+'Cat'
+```
+
+```python
+>>> batRegex = re.compile(r'Bat(man|mobile|copter|bat)')
+>>> mo = batRegex.search('Batmobile lost a wheel')
+>>> mo.group()
+'Batmobile'
+>>> mo.group(1)
+'mobile'
+```
+| 
+
+
+
 
 
 
