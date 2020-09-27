@@ -137,7 +137,19 @@ The first occurrence of matching text will be returned as the Match object.
 >>> mo.group(1)
 'mobile'
 ```
-| 
+---
+| quantifier | matching |
+|:----------:|:---------|
+| ? | optional, zero or one |
+| * | zero or more |
+| {} | repetitive |
+| {n} | exactly n times |
+| {min,} | min or more times |
+| {min,max} | at least min times, but not more than max time |
+---
+
+## ? : Optional Matching 
+
 
 
 
