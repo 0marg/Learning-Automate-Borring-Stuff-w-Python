@@ -142,13 +142,69 @@ The first occurrence of matching text will be returned as the Match object.
 |:----------:|:---------|
 | ? | optional, zero or one |
 | * | zero or more |
+| + | one or more |
 | {} | repetitive |
 | {n} | exactly n times |
 | {min,} | min or more times |
 | {min,max} | at least min times, but not more than max time |
 ---
 
-## ? : Optional Matching 
+## ? : Optional, zero or one matching 
+
+```pyton
+>>> batRegex = re.compile(r'Bat(wo)?man')
+>>> mo1 = batRegex.search('Robin talks to Batwoman')
+>>> mo1.group()
+'Batwoman'
+>>> mo2 = batRegex.search('Robin rides with Batman')
+>>> mo2.group()
+'Batman'
+```
+
+## * : zero or more matching
+
+```python
+p()
+'Batman'
+>>> batRegex = re.compile(r'Bat(wo)*man')
+>>> mo1 = batRegex.search('Robin rides with Batman')
+>>> mo1.group()
+'Batman'
+>>> mo2 = batRegex.search('Robin talk to Batwoman')
+>>> mo2.group()
+'Batwoman'
+>>> mo3 = batRegex.search('lala Batwowowowowoman')
+>>> mo3.group()
+'Batwowowowowoman'
+```
+
+## + : one or more matching
+
+## {}: specific repetition matching
+
+```python
+>>> import re
+>>> haRegex = re.compile(r'(Ha){3}')
+>>> mo1 = haRegex.search('hahaha')
+>>> mo1.group()
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    mo1.group()
+AttributeError: 'NoneType' object has no attribute 'group'
+>>> mo1 = haRegex.search('HaHaHa')
+>>> mo1.group()
+'HaHaHa'
+>>> mo2 =haRegex.search('Ha')
+>>> mo2.group()
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    mo2.group()
+AttributeError: 'NoneType' object has no attribute 'group'
+>>> mo2 == None
+True
+```
+## Greedy and Nongreedy Matching
+
 
 
 
